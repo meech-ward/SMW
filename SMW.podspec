@@ -3,8 +3,7 @@ Pod::Spec.new do |s|
   s.name             = "SMW"
   s.version          = "0.1.0"
   s.summary          = "Global convenience functions"
-  s.description      = <<-DESC
-                       DESC
+
   s.homepage         = "https://github.com/meech-ward/SMW"
   s.license          = 'MIT'
   s.author           = { "Sam Meech-Ward" => "sam@meech-ward.com" }
