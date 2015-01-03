@@ -8,6 +8,21 @@ Also I wanted to practice making a cocoapod.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+	#import <SMW/SMW.h>
+	
+	// Like NSLog but better
+	SMWLog(args...)
+
+	// Check if the device is an ipad
+	BOOL deviceIsiPad();
+
+	// Remove any implicit animations
+	// Example: Change the frame of a CALayer without it animating
+	void unAnimateBlock(void (^block)(void));
+
+	// Log a CGRect
+	void printFrame(CGRect frame);
+
 ## Requirements
 
 ## Installation

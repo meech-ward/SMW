@@ -13,7 +13,7 @@
 
 // NSLog better for debugging
 void ExtendNSLog(const char *file, int lineNumber, const char *functionName, NSString *format, ...);
-#define SMWLog(args...) if (debug==1) { ExtendNSLog(__FILE__,__LINE__,__PRETTY_FUNCTION__,args);}
+#define SMWLog(args...) { ExtendNSLog(__FILE__,__LINE__,__PRETTY_FUNCTION__,args);}
 
 // Check if the device is an ipad
 BOOL deviceIsiPad();
