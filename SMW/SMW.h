@@ -8,6 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SMW : NSObject
+#import <SMW/SMWUtilityFunctions.h>
 
-@end

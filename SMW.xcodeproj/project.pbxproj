@@ -8,27 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		22C002971A57132500A29592 /* SMW.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22C002961A57132500A29592 /* SMW.h */; };
-		22C002991A57132500A29592 /* SMW.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C002981A57132500A29592 /* SMW.m */; };
-		22C0029F1A57132500A29592 /* libSMW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C002931A57132500A29592 /* libSMW.a */; };
+		22C002AF1A57134600A29592 /* SMWUtilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C002AE1A57134600A29592 /* SMWUtilityFunctions.m */; };
+		22C002B01A57152000A29592 /* SMWUtilityFunctions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22C002AD1A57134600A29592 /* SMWUtilityFunctions.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		22C002A01A57132500A29592 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22C0028B1A57132500A29592 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C002921A57132500A29592;
-			remoteInfo = SMW;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		22C002911A57132500A29592 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				22C002B01A57152000A29592 /* SMWUtilityFunctions.h in CopyFiles */,
 				22C002971A57132500A29592 /* SMW.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,9 +29,8 @@
 /* Begin PBXFileReference section */
 		22C002931A57132500A29592 /* libSMW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMW.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C002961A57132500A29592 /* SMW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMW.h; sourceTree = "<group>"; };
-		22C002981A57132500A29592 /* SMW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMW.m; sourceTree = "<group>"; };
-		22C0029E1A57132500A29592 /* SMWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22C002A41A57132500A29592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C002AD1A57134600A29592 /* SMWUtilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWUtilityFunctions.h; sourceTree = "<group>"; };
+		22C002AE1A57134600A29592 /* SMWUtilityFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWUtilityFunctions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,14 +41,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22C0029B1A57132500A29592 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22C0029F1A57132500A29592 /* libSMW.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				22C002951A57132500A29592 /* SMW */,
-				22C002A21A57132500A29592 /* SMWTests */,
 				22C002941A57132500A29592 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				22C002931A57132500A29592 /* libSMW.a */,
-				22C0029E1A57132500A29592 /* SMWTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,25 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				22C002961A57132500A29592 /* SMW.h */,
-				22C002981A57132500A29592 /* SMW.m */,
+				22C002AD1A57134600A29592 /* SMWUtilityFunctions.h */,
+				22C002AE1A57134600A29592 /* SMWUtilityFunctions.m */,
 			);
 			path = SMW;
-			sourceTree = "<group>";
-		};
-		22C002A21A57132500A29592 /* SMWTests */ = {
-			isa = PBXGroup;
-			children = (
-				22C002A31A57132500A29592 /* Supporting Files */,
-			);
-			path = SMWTests;
-			sourceTree = "<group>";
-		};
-		22C002A31A57132500A29592 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				22C002A41A57132500A29592 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,24 +90,6 @@
 			productReference = 22C002931A57132500A29592 /* libSMW.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		22C0029D1A57132500A29592 /* SMWTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22C002AA1A57132500A29592 /* Build configuration list for PBXNativeTarget "SMWTests" */;
-			buildPhases = (
-				22C0029A1A57132500A29592 /* Sources */,
-				22C0029B1A57132500A29592 /* Frameworks */,
-				22C0029C1A57132500A29592 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22C002A11A57132500A29592 /* PBXTargetDependency */,
-			);
-			name = SMWTests;
-			productName = SMWTests;
-			productReference = 22C0029E1A57132500A29592 /* SMWTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,9 +100,6 @@
 				ORGANIZATIONNAME = "Sam Meech-Ward";
 				TargetAttributes = {
 					22C002921A57132500A29592 = {
-						CreatedOnToolsVersion = 6.1.1;
-					};
-					22C0029D1A57132500A29592 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -173,46 +117,20 @@
 			projectRoot = "";
 			targets = (
 				22C002921A57132500A29592 /* SMW */,
-				22C0029D1A57132500A29592 /* SMWTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		22C0029C1A57132500A29592 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22C0028F1A57132500A29592 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22C002991A57132500A29592 /* SMW.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22C0029A1A57132500A29592 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				22C002AF1A57134600A29592 /* SMWUtilityFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		22C002A11A57132500A29592 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C002921A57132500A29592 /* SMW */;
-			targetProxy = 22C002A01A57132500A29592 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		22C002A51A57132500A29592 /* Debug */ = {
@@ -248,7 +166,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -282,7 +200,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -294,6 +212,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -303,37 +222,8 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		22C002AB1A57132500A29592 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SMWTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		22C002AC1A57132500A29592 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SMWTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -354,14 +244,6 @@
 			buildConfigurations = (
 				22C002A81A57132500A29592 /* Debug */,
 				22C002A91A57132500A29592 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		22C002AA1A57132500A29592 /* Build configuration list for PBXNativeTarget "SMWTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22C002AB1A57132500A29592 /* Debug */,
-				22C002AC1A57132500A29592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
